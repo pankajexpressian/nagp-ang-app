@@ -25,6 +25,6 @@ steps:
   
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(System.DefaultWorkingDirectory)/bin/WebApp'
+    PathtoPublish: '$(System.DefaultWorkingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
