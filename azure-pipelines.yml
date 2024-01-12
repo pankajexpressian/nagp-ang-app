@@ -7,7 +7,9 @@ trigger:
 - main
 
 pool:
-  name: DELL_L5490
+  name: Default
+  demands:
+   - agent.name -DELL_L5490
 
 steps:
 - task: NodeTool@0
